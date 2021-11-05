@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter as BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import TopNav from "./components/TopNav";
 import Homepage from "./pages/Homepage/Homepage";
@@ -10,7 +10,7 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <div className="App" style={{ width: "100%", overflow: "hidden" }}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/">
             <div id="mainPage">
@@ -32,6 +32,9 @@ function App() {
                 </section>
               </div>
             </div>
+          </Route>
+          <Route status={404}>
+            <div>404 - Not Found!</div>
           </Route>
         </Switch>
       </BrowserRouter>

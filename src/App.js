@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter as BrowserRouter, Route, Switch } from "react-router-dom";
 
 import TopNav from "./components/TopNav";
 import Homepage from "./pages/Homepage/Homepage";

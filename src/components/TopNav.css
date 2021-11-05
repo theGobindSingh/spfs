@@ -1,0 +1,45 @@
+#TopNav {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(45, 45, 45);
+  height: 10vh;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+#TopNav img {
+  object-fit: contain;
+  max-width: 115px;
+}
+
+#TopNav > div {
+  display: flex;
+}
+
+#TopNav .links a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#TopNav .social a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#TopNav a:hover {
+  color: cyan;
+  text-shadow: 0 0 3px black, 0 0 3px black;
+}
+
+@media only screen and (max-width: 768px) {
+  #TopNav .links {
+    display: none;
+  }
+}

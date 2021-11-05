@@ -1,0 +1,24 @@
+#Homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  padding-left: 05%;
+  padding-right: 05%;
+}
+
+.homeImg {
+  width: 300px;
+}
+
+.homeText {
+  vertical-align: middle;
+}
+.homeText h1 {
+  font-family: "Allison", cursive;
+  padding-right: 30px;
+  font-size: 6rem;
+  text-align: end;
+  line-height: 60px;
+  margin-bottom: 50px;
+}

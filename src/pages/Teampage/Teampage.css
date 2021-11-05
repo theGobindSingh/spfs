@@ -1,0 +1,84 @@
+#Teampage {
+  height: 100%;
+  padding-left: 06%;
+  padding-right: 06%;
+  padding-top: 5%;
+}
+
+#Teampage .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#Teampage .team.row._1 .teamMainImg {
+  width: 33vh;
+  height: 33vh;
+}
+#Teampage .team.row._1 img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#Teampage .team.row._1 .teamIntro {
+  width: 40%;
+}
+#Teampage .team.row._1 .p2 {
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+#Teampage .team.row._2 {
+  padding-top: 01%;
+}
+#Teampage .team.row._2 .memImgCont {
+  height: 20vh;
+  width: 20vh;
+  vertical-align: middle;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#Teampage .team.row._2 .mem h2,
+#Teampage .team.row._2 .mem p {
+  margin-top: 01%;
+  margin-bottom: 01%;
+  max-width: 28vw;
+}
+#Teampage .team.row._2 .memImgCont img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  #Teampage {
+    padding-left: 03%;
+    padding-right: 03%;
+  }
+  #Teampage .team.row._1 .p2 {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  #Teampage .team.row._1 .teamMainImg {
+    height: 22vh;
+    width: 22vh;
+  }
+  #Teampage .team.row p {
+    font-size: 0.65rem;
+  }
+  #Teampage .team.row._2 {
+    margin-top: 5%;
+  }
+  #Teampage .team.row._2 .memImgCont {
+    height: 15vh;
+    width: 15vh;
+  }
+  #Teampage .team.row._2 .mem h2,
+  #Teampage .team.row._2 .mem p {
+    max-width: 38vw;
+  }
+}
